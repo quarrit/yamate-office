@@ -1,0 +1,88 @@
+.button {
+	display: inline-block;
+}
+
+.menu-trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background-color: #31241B;
+	span {
+		position: absolute;
+		top: 45%;
+		left: 0;
+		right: 0;
+		width: 34px;
+		height: 6px;
+		margin: auto;
+		background-color: #C9C3B0;
+		&:before, &:after {
+			@mixin pseudo 100%, 100%;
+			top: 0;
+			left: 0;
+			background-color: #C9C3B0;
+			transition: transform .4s ease-in-out-circ;
+		}
+		&:before {
+			transform: translateY(-12px);
+		}
+		&:after {
+			transform: translateY(12px);
+		}
+	}
+	&.active {
+		span {
+			background-color: transparent;
+			&:before {
+				transform: rotate(45deg);
+			}
+			&:after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+.column-close-trigger {
+	position: fixed;
+	top: 4.65rem;
+	right: 1rem;
+	width: 2.333em;
+	height: 2.333em;
+	z-index: 99;
+	i {
+		display: inline-block;
+		position: absolute;
+		top: center;
+		right: 0;
+		left: 0;
+		width: 1.556em;
+		height: 2px;
+		margin: auto;
+		&:before, &:after {
+			@mixin pseudo 100%, 2px;
+			top: 0;
+			left: 0;
+			background-color: #fff;
+			transition: background-color 0.4s ease;
+		}
+		&:before, &:after {
+			background-color: #fff;
+		}
+		&:before {
+			transform: rotate(-45deg);
+		}
+		&:after {
+			transform: rotate(45deg);
+		}
+	}
+	&:hover {
+		i {
+			&:before, &:after {
+				background-color: $main-colour;
+			}
+		}
+	}
+}

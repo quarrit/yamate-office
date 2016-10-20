@@ -1,0 +1,19 @@
+<%-- block pageid --%>home<%-- endblock --%>
+<%-- block title --%>home<%-- endblock --%>
+
+<%-- extends '_layout.nunjucks' --%>
+
+<%-- block content --%>
+<main class="main main--home clear" id="main" role="main">
+	<article class="content content--main">
+		<section class="section section--top js-get-height">
+			
+		</section>
+
+	</article>
+</main>
+
+<%-- endblock --%>
+
+<%-- block scripts --%> 
+<%-- endblock --%>

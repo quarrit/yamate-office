@@ -1,0 +1,72 @@
+::-webkit-input-placeholder {
+	color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #fff;  
+}
+
+:-ms-input-placeholder {  
+	color: #fff;  
+}
+
+form {
+	margin: auto;
+	.title {
+		display: inline-block;
+		width: 110px;
+		text-align: left;
+		i {
+			color: $red;
+			font-weight: bold;
+		}
+		&:before {
+			content:none;
+		}
+	}
+	p {
+		margin: 1rem 0 0;
+		&.is-half {
+			float: left;
+			width: 48%;
+			&:first-child {
+				margin-right: 4%;
+			}
+		}
+	}
+	input,textarea, select {
+		width: 100%;
+		/*background-color: rgba(255,255,255,0.5);*/
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+	}
+
+	input {
+		padding: 8px 10px;
+	}
+	select {
+		padding: 8px 10px;
+		border-radius: 0;
+		appearance: inherit;
+		&:focus {
+			outline: none;
+		}
+	}
+	textarea {
+		width: 100%;
+		height: 6em;
+		padding: 10px;
+	}
+	textarea:focus, input:focus{
+		outline: 0;
+	}
+	p.last-child {
+		text-align: center;
+	}
+}

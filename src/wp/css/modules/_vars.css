@@ -1,0 +1,11 @@
+$main-font: "Vidaloka", "Baskerville Old Face", "Baskerville", serif;
+$sub-font: "futura-pt", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+
+$main-colour: #000;
+$sub-colour: #ccc;
+$bgColour: #fff;
+$blue: ;
+$yellow: ;
+
+$maxWidth: 1140px;
+$headerSpace: 6.750rem;
